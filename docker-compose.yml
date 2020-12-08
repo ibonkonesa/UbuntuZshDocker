@@ -7,6 +7,12 @@ services:
     stdin_open: true
     tty: true
     volumes:
-      - persistent:/root
+      - home:/home
+      - var:/var
+      - etc:/etc
+      - usr:/usr
 volumes:
-   persistent: {}
+   home: {}
+   var: {}
+   etc: {}
+   usr: {}
